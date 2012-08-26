@@ -1,0 +1,31 @@
+{
+  "name": "attribute",
+  "version": "0.0.1",
+  "description": "Stream that updates attributes on elements",
+  "keywords": [],
+  "author": "Raynos <raynos2@gmail.com>",
+  "repository": "git://github.com/Raynos/attribute.git",
+  "main": "index",
+  "homepage": "https://github.com/Raynos/attribute",
+  "contributors": [
+    {
+      "name": "Jake Verbaten"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Raynos/attribute/issues",
+    "email": "raynos2@gmail.com"
+  },
+  "dependencies": {
+    "through": "~0.1.4",
+    "iterators": "~0.3.0"
+  },
+  "devDependencies": {},
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Raynos/attribute/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {}
+}
