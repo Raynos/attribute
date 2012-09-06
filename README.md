@@ -7,11 +7,9 @@ Stream that updates attributes on elements
 Creates a [delta-stream][1] which when written to updates attributes
 
 ``` js
-var stream = AttributeStream(someElement)
+var delta = Attribute(someElement)
 
-stream.write([{
-    "anyAttribute": "anyValue"
-}])
+delta.set("anyAttribute", "anyValue")
 ```
 
 ## Installation

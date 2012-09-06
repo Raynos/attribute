@@ -1,20 +1,16 @@
 var forEach = require("iterators").forEachSync
-    , through = require("through")
+    , Delta = require("delta-stream")
 
 module.exports = AttributeStream
 
 function AttributeStream(elem) {
-    var stream = through(updateAttribute)
+    var delta = Delta()
 
-    return stream
+    delta.on("changes", setAttribute)
 
-    function updateAttribute(data) {
-        var changes = data[0]
+    return delta
 
-        forEach(changes, setAttribute)
-    }
-
-    function setAttribute(value, key) {
+    function setAttribute(key, value) {
         elem.setAttribute(key, value)
     }
 }
